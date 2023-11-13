@@ -1,0 +1,51 @@
+Problem Description
+You have been given a function findSum which returns the sum of numbers from 1 to n but there is an error in the code, please debug this problem. You can start by uncommenting the code given in the function. Please note that the value of n will be greater than 0.
+
+
+Hint 1: Whenever we use loops, we have to make sure that we give proper terminating conditions.
+
+Hint 2: Understand why infinite loops happen. Try printing i and sum in each iteration to figure out what is going wrong.
+
+
+6 Step Strategy to solve problems
+Use the 6 step strategy to solve any problem
+
+Understand the problem
+
+Design test data/test cases (i.e. input and expected output)
+
+Derive the solution (write pseudo code for the solution)
+
+Test the solution (do a dry run of the pseudo code for the test data and confirm it works)
+
+Write the program/code (using JavaScript here)
+
+Test the code (debug any syntax errors and logical errors)
+
+
+
+
+
+/////Answer
+
+function findSum(n) {
+
+  let i = 1;
+  let sum = 0;
+    while(i <= n){
+    sum += i;
+    console.log(i);
+    console.log(sum);
+      }
+      return sum;  
+}
+
+if (findSum(3) !== 6)
+  console.log("Test fails: Expected 6 for input n = 3");
+else
+  console.log("Sample test case for input n = 3 passed!");
+
+
+
+module.exports = findSum;
+
